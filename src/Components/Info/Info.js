@@ -473,6 +473,7 @@ function Info() {
           width="100%"
         >
           <Image
+            loading="lazy"
             src={logo}
             marginLeft={{ base: "20px", md: "100px", lg: "150px" }}
             h={{ base: "33px", md: "43px", lg: "53px" }}
@@ -523,6 +524,7 @@ function Info() {
               bg="lightgray"
             >
               <Image
+            loading="lazy"
                 src={firstImg}
                 height="100%"
                 width="100%"
@@ -813,6 +815,7 @@ function Info() {
               bg="lightgray"
             >
               <Image
+            loading="lazy"
                 src={ThirdImg}
                 height="100%"
                 width="100%"

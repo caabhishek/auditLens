@@ -256,20 +256,20 @@ function Home() {
       }
     }
   };
-  const onCLoseModal = () =>{
-    onClose()
+  const onCLoseModal = () => {
+    onClose();
     setFormData({
-      name:"",
-      phone:"",
-      email:"",
-      title:""
-    })
+      name: "",
+      phone: "",
+      email: "",
+      title: "",
+    });
     setIsError({
-      name:false,
-      email:false,
-      phone:false,
-    })
-  }
+      name: false,
+      email: false,
+      phone: false,
+    });
+  };
   return (
     <chakra.div w="100%" h="100vh">
       <Modal isOpen={isOpen} size="sm" onClose={onCLoseModal} isCentered>
@@ -404,7 +404,7 @@ function Home() {
         flexDirection="column"
         alignItems="center"
       >
-        <Image src={bgImg} w="100%" h="100%" objectFit="cover" />
+        <Image loading="lazy" src={bgImg} w="100%" h="100%" objectFit="cover" />
         <Flex
           h="20vh"
           alignItems="center"
@@ -414,6 +414,7 @@ function Home() {
           top="0px"
         >
           <Image
+            loading="lazy"
             src={logo}
             // marginLeft={{ base: "20px", md: "100px", lg: "150px" }}
             h={{ base: "33px", md: "43px", lg: "53px" }}
@@ -530,6 +531,7 @@ function Home() {
             >
               <Link href="/card?num=1" isExternal>
                 <Image
+                  loading="lazy"
                   src={box1}
                   w="100%"
                   h="100%"
@@ -594,6 +596,7 @@ function Home() {
             >
               <Link href="/card?num=2" isExternal>
                 <Image
+                  loading="lazy"
                   src={box2}
                   w="100%"
                   h="100%"
@@ -655,6 +658,7 @@ function Home() {
             >
               <Link href="/card?num=3" isExternal>
                 <Image
+                  loading="lazy"
                   src={box3}
                   w="100%"
                   h="100%"
@@ -744,6 +748,7 @@ function Home() {
               zIndex={2}
             >
               <Image
+                loading="lazy"
                 src={firstImg}
                 height="100%"
                 width="100%"
@@ -855,6 +860,7 @@ function Home() {
             position="absolute"
           >
             <Image
+              loading="lazy"
               src={secondImg}
               height="100%"
               width="100%"
@@ -899,6 +905,7 @@ function Home() {
             zIndex={2}
           >
             <Image
+              loading="lazy"
               src={ThirdImg}
               height="100%"
               width="100%"
@@ -971,6 +978,7 @@ function Home() {
       >
         <Box width="80%" height="400px" borderRadius="40px" bg="lightgray">
           <Image
+            loading="lazy"
             src={firstImg}
             w="100%"
             h="100%"
@@ -1009,6 +1017,7 @@ function Home() {
 
         <Box width="80%" height="400px" borderRadius="40px" bg="lightgray">
           <Image
+            loading="lazy"
             src={secondImg}
             w="100%"
             h="100%"
@@ -1047,6 +1056,7 @@ function Home() {
 
         <Box width="80%" height="400px" borderRadius="40px" bg="lightgray">
           <Image
+            loading="lazy"
             src={ThirdImg}
             w="100%"
             h="100%"
