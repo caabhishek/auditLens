@@ -1,2 +1,2 @@
-website: https://www.auditlens.com/ 
+website: https://auditlens.netlify.app/
 it is responsive
